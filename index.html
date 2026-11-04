@@ -318,7 +318,7 @@
                                 <input type="radio" name="q1a" value="C"> C) Surface area
                             </label>
                             <label class="mcq-option">
-                                <input type="radio" name="q1a" value="D"> D) Color of reactants
+                                <input type="radio" name="q1a" value="D"> D) Colour of reactants
                             </label>
                         </div>
                     </div>
@@ -446,7 +446,7 @@
                                 <input type="radio" name="q5b" value="B"> B) Thermal decomposition of calcium carbonate
                             </label>
                             <label class="mcq-option">
-                                <input type="radio" name="q5b" value="C"> C) Neutralization
+                                <input type="radio" name="q5b" value="C"> C) Neutralisation
                             </label>
                             <label class="mcq-option">
                                 <input type="radio" name="q5b" value="D"> D) Respiration
@@ -663,7 +663,7 @@
                                 <input type="radio" name="q12d" value="B"> B) Atoms sharing electrons
                             </label>
                             <label class="mcq-option">
-                                <input type="radio" name="q12d" value="C"> C) Positive metal ions and delocalized electrons
+                                <input type="radio" name="q12d" value="C"> C) Positive metal ions and delocalised electrons
                             </label>
                             <label class="mcq-option">
                                 <input type="radio" name="q12d" value="D"> D) Molecules and atoms
@@ -741,7 +741,7 @@
                     
                     <h4 style="color: #2c3e50; margin-bottom: 15px;">Section A: Rates of Reaction</h4>
                     <div style="margin-bottom: 20px;">
-                        <p><strong>Q1a)</strong> D) Color of reactants</p>
+                        <p><strong>Q1a)</strong> D) Colour of reactants</p>
                         <p><strong>Q1b)</strong> B) Providing an alternative pathway with lower activation energy</p>
                         <p><strong>Q1c)</strong> A) Using zinc powder instead of zinc strips</p>
                         <p><strong>Q1d)</strong> D) All of the above</p>
@@ -770,7 +770,7 @@
                         <p><strong>Q7a)</strong> Bond energy is the energy needed to break one mole of covalent bonds</p>
                         <p><strong>Q7b)</strong> Energy released when making new bonds is greater than energy needed to break existing bonds, so net energy is released</p>
                         
-                        <p><strong>Q8a)</strong> Examples: combustion, neutralization, respiration, oxidation</p>
+                        <p><strong>Q8a)</strong> Examples: combustion, neutralisation, respiration, oxidation</p>
                         <p><strong>Q8b)</strong> Examples: thermal decomposition, photosynthesis, citric acid + sodium hydrogencarbonate. (Melting and evaporating are physical changes, not reactions.)</p>
                         <p><strong>Q8c)</strong> Examples: hand warmers, heating, cooking, fuels</p>
                     </div>
@@ -793,7 +793,7 @@
                         <p><strong>Q12a)</strong> C) Metal and non-metal atoms</p>
                         <p><strong>Q12b)</strong> B) Sharing of electrons</p>
                         <p><strong>Q12c)</strong> B) Diamond</p>
-                        <p><strong>Q12d)</strong> C) Positive metal ions and delocalized electrons</p>
+                        <p><strong>Q12d)</strong> C) Positive metal ions and delocalised electrons</p>
                         
                         <p><strong>Q13 Table:</strong></p>
                         <ul style="margin-left: 20px;">
@@ -1033,13 +1033,13 @@
             // Examples - accept common answers
             const q8a = formData.get('q8a') || '';
             if (q8a.toLowerCase().includes('combustion') || q8a.toLowerCase().includes('burning') || 
-                q8a.toLowerCase().includes('neutralization') || q8a.toLowerCase().includes('respiration')) {
+                q8a.toLowerCase().includes('neutralis') || q8a.toLowerCase().includes('neutraliz') || q8a.toLowerCase().includes('respiration') || q8a.toLowerCase().includes('oxidation')) {
                 sectionScores.B += 1;
             }
             
             const q8b = formData.get('q8b') || '';
             if (q8b.toLowerCase().includes('thermal decomposition') || q8b.toLowerCase().includes('photosynthesis') || 
-                q8b.toLowerCase().includes('melting') || q8b.toLowerCase().includes('evaporation')) {
+                q8b.toLowerCase().includes('citric') || q8b.toLowerCase().includes('hydrogencarbonate') || q8b.toLowerCase().includes('hydrogen carbonate') || q8b.toLowerCase().includes('sports injury') || q8b.toLowerCase().includes('cold pack')) {
                 sectionScores.B += 1;
             }
             
@@ -1148,7 +1148,7 @@
             
             if (sectionScores.C >= 10) strengths.push("Excellent understanding of equilibria and Le Chatelier's principle! ⚖️");
             else if (sectionScores.C >= 7) improvements.push("You're getting the hang of equilibria! Create a mindmap showing how temperature, pressure, and concentration changes affect equilibrium position - visual connections really help here.");
-            else improvements.push("Equilibria can be tricky - don't worry! Create a summary sheet explaining dynamic equilibrium and Le Chatelier's principle with simple examples. Focus on understanding the concept before memorizing effects.");
+            else improvements.push("Equilibria can be tricky - don't worry! Create a summary sheet explaining dynamic equilibrium and Le Chatelier's principle with simple examples. Focus on understanding the concept before memorising effects.");
             
             if (sectionScores.D >= 15) strengths.push("Outstanding knowledge of structure and bonding - you really understand how structure affects properties! 🔗");
             else if (sectionScores.D >= 10) improvements.push("Good progress with bonding concepts! Create a mindmap linking the three types of bonding (ionic, covalent, metallic) to their properties - seeing the connections helps a lot.");
